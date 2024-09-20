@@ -1,0 +1,342 @@
+[33mWARNING[0m:  [08-09-2024 18:52:33] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 18:52:35] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 18:52:35] Starting component System
+[36mDEBUG[0m:    [08-09-2024 18:52:35] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 18:52:35] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 18:52:35] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 18:52:35] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 18:52:35] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 18:52:35] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 18:52:35] Started server process [[36m7452[0m]
+[32mINFO[0m:     [08-09-2024 18:52:35] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 18:52:35] Application startup complete.
+[32mINFO[0m:     [08-09-2024 18:52:35] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-09-2024 18:52:48] ::1:57247 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 18:52:48] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-09-2024 18:52:48] ::1:57247 - "POST /api/v1/collections/36bc8d59-4e21-456c-a30c-059731d89050/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 18:52:49] ::1:57247 - "POST /api/v1/collections/36bc8d59-4e21-456c-a30c-059731d89050/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 18:53:35] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 18:53:35] ::1:57275 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 18:53:35] ::1:57275 - "POST /api/v1/collections/36bc8d59-4e21-456c-a30c-059731d89050/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 18:53:36] ::1:57275 - "POST /api/v1/collections/36bc8d59-4e21-456c-a30c-059731d89050/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 18:54:16] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 18:54:16] ::1:57291 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 18:54:17] ::1:57291 - "POST /api/v1/collections/36bc8d59-4e21-456c-a30c-059731d89050/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 19:05:24] Shutting down
+[32mINFO[0m:     [08-09-2024 19:05:25] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-09-2024 19:05:25] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 19:05:25] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 19:05:25] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-09-2024 19:05:25] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 19:05:25] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 19:05:25] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 19:05:25] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 19:05:25] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-09-2024 19:05:25] Application shutdown complete.
+[32mINFO[0m:     [08-09-2024 19:05:25] Finished server process [[36m7452[0m]
+[33mWARNING[0m:  [08-09-2024 19:05:40] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 19:05:41] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 19:05:41] Starting component System
+[36mDEBUG[0m:    [08-09-2024 19:05:41] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 19:05:41] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 19:05:41] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 19:05:41] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 19:05:41] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 19:05:41] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 19:05:41] Started server process [[36m18184[0m]
+[32mINFO[0m:     [08-09-2024 19:05:41] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 19:05:41] Application startup complete.
+[32mINFO[0m:     [08-09-2024 19:05:41] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-09-2024 19:09:14] ::1:64726 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 19:09:14] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-09-2024 19:09:14] ::1:64726 - "POST /api/v1/collections/2f5b28fb-fe52-47d1-b988-2960b8ab80f4/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 19:09:39] ::1:64726 - "POST /api/v1/collections/2f5b28fb-fe52-47d1-b988-2960b8ab80f4/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 19:11:47] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 19:11:47] ::1:64918 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 19:11:47] ::1:64918 - "POST /api/v1/collections/2f5b28fb-fe52-47d1-b988-2960b8ab80f4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:15:39] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:15:39] ::1:50634 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:15:39] ::1:50634 - "POST /api/v1/collections/2f5b28fb-fe52-47d1-b988-2960b8ab80f4/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:15:40] ::1:50634 - "POST /api/v1/collections/2f5b28fb-fe52-47d1-b988-2960b8ab80f4/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:35:14] Shutting down
+[32mINFO[0m:     [08-09-2024 20:35:14] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-09-2024 20:35:14] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 20:35:14] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 20:35:14] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-09-2024 20:35:14] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 20:35:14] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 20:35:14] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 20:35:14] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 20:35:14] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-09-2024 20:35:14] Application shutdown complete.
+[32mINFO[0m:     [08-09-2024 20:35:14] Finished server process [[36m18184[0m]
+[33mWARNING[0m:  [08-09-2024 20:35:27] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 20:35:28] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 20:35:28] Starting component System
+[36mDEBUG[0m:    [08-09-2024 20:35:28] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 20:35:28] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 20:35:28] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 20:35:28] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 20:35:28] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 20:35:28] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 20:35:28] Started server process [[36m18556[0m]
+[32mINFO[0m:     [08-09-2024 20:35:28] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 20:35:28] Application startup complete.
+[32mINFO[0m:     [08-09-2024 20:35:28] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-09-2024 20:35:34] ::1:51073 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:35:34] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-09-2024 20:35:34] ::1:51073 - "POST /api/v1/collections/c0b4e64a-e893-4987-a980-719823f1d5ac/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:35:35] ::1:51073 - "POST /api/v1/collections/c0b4e64a-e893-4987-a980-719823f1d5ac/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:36:09] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:36:09] ::1:51080 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:36:09] ::1:51080 - "POST /api/v1/collections/c0b4e64a-e893-4987-a980-719823f1d5ac/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:36:18] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:36:18] ::1:51087 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:36:18] ::1:51087 - "POST /api/v1/collections/c0b4e64a-e893-4987-a980-719823f1d5ac/query HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:39:44] Shutting down
+[32mINFO[0m:     [08-09-2024 20:39:44] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-09-2024 20:39:44] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 20:39:44] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 20:39:44] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-09-2024 20:39:44] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 20:39:44] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 20:39:44] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 20:39:44] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 20:39:44] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-09-2024 20:39:44] Application shutdown complete.
+[32mINFO[0m:     [08-09-2024 20:39:44] Finished server process [[36m18556[0m]
+[33mWARNING[0m:  [08-09-2024 20:40:23] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 20:40:24] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 20:40:24] Starting component System
+[36mDEBUG[0m:    [08-09-2024 20:40:24] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 20:40:24] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 20:40:24] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 20:40:24] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 20:40:24] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 20:40:24] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 20:40:24] Started server process [[36m15608[0m]
+[32mINFO[0m:     [08-09-2024 20:40:24] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 20:40:24] Application startup complete.
+[32mINFO[0m:     [08-09-2024 20:40:24] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-09-2024 20:40:29] ::1:51132 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:40:29] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-09-2024 20:40:29] ::1:51132 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:40:30] ::1:51132 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:40:31] ::1:51132 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:40:57] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:40:57] ::1:51141 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:40:57] ::1:51141 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:40:58] ::1:51141 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:40:58] ::1:51141 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:41:21] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:41:21] ::1:51150 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:41:21] ::1:51150 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:53:22] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:53:22] ::1:51351 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:53:22] ::1:51351 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:55:24] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:55:24] ::1:51384 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:55:24] ::1:51384 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:55:55] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:55:55] ::1:51394 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:55:55] ::1:51394 - "POST /api/v1/collections/e64814eb-9c03-4c60-ab07-875ecffdf6eb/query HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:56:09] Shutting down
+[32mINFO[0m:     [08-09-2024 20:56:09] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-09-2024 20:56:09] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 20:56:09] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 20:56:09] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-09-2024 20:56:09] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 20:56:09] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 20:56:09] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 20:56:09] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 20:56:09] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-09-2024 20:56:09] Application shutdown complete.
+[32mINFO[0m:     [08-09-2024 20:56:09] Finished server process [[36m15608[0m]
+[33mWARNING[0m:  [08-09-2024 20:56:26] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 20:56:27] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 20:56:27] Starting component System
+[36mDEBUG[0m:    [08-09-2024 20:56:27] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 20:56:27] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 20:56:27] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 20:56:27] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 20:56:27] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 20:56:27] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 20:56:28] Started server process [[36m23260[0m]
+[32mINFO[0m:     [08-09-2024 20:56:28] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 20:56:28] Application startup complete.
+[32mINFO[0m:     [08-09-2024 20:56:28] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-09-2024 20:56:49] ::1:51422 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:56:49] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-09-2024 20:56:49] ::1:51422 - "POST /api/v1/collections/4fd0682c-ffb5-4d14-bac9-413365b5c800/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:56:51] ::1:51422 - "POST /api/v1/collections/4fd0682c-ffb5-4d14-bac9-413365b5c800/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:57:17] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:57:17] ::1:51430 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:57:17] ::1:51430 - "POST /api/v1/collections/4fd0682c-ffb5-4d14-bac9-413365b5c800/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 20:57:44] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 20:57:44] ::1:51443 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 20:57:44] ::1:51443 - "POST /api/v1/collections/4fd0682c-ffb5-4d14-bac9-413365b5c800/query HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:03:05] Shutting down
+[32mINFO[0m:     [08-09-2024 21:03:05] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-09-2024 21:03:05] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 21:03:05] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 21:03:05] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-09-2024 21:03:05] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:03:05] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:03:05] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:03:05] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:03:05] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-09-2024 21:03:05] Application shutdown complete.
+[32mINFO[0m:     [08-09-2024 21:03:05] Finished server process [[36m23260[0m]
+[33mWARNING[0m:  [08-09-2024 21:03:12] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 21:03:14] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Starting component System
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 21:03:14] Started server process [[36m20016[0m]
+[32mINFO[0m:     [08-09-2024 21:03:14] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 21:03:14] Application startup complete.
+[32mINFO[0m:     [08-09-2024 21:03:14] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:03:14] Stopping component OpenTelemetryClient
+[31mERROR[0m:    [08-09-2024 21:03:14] Traceback (most recent call last):
+  File "C:\Users\i\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\i\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\i\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\i\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\i\AppData\Local\Programs\Python\Python312\Lib\site-packages\starlette\routing.py", line 700, in lifespan
+    await receive()
+  File "C:\Users\i\AppData\Local\Programs\Python\Python312\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\i\AppData\Local\Programs\Python\Python312\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+[33mWARNING[0m:  [08-09-2024 21:03:27] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 21:03:28] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 21:03:28] Starting component System
+[36mDEBUG[0m:    [08-09-2024 21:03:28] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 21:03:28] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:03:28] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:03:28] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:03:28] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:03:28] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 21:03:28] Started server process [[36m17528[0m]
+[32mINFO[0m:     [08-09-2024 21:03:28] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 21:03:28] Application startup complete.
+[32mINFO[0m:     [08-09-2024 21:03:28] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-09-2024 21:03:36] ::1:51601 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 21:03:36] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-09-2024 21:03:37] ::1:51601 - "POST /api/v1/collections/c5ff65b0-4394-4095-b347-dc22f674c207/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:03:37] ::1:51601 - "POST /api/v1/collections/c5ff65b0-4394-4095-b347-dc22f674c207/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 21:03:44] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 21:03:44] ::1:51607 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:03:44] ::1:51607 - "POST /api/v1/collections/c5ff65b0-4394-4095-b347-dc22f674c207/query HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:06:56] Shutting down
+[32mINFO[0m:     [08-09-2024 21:06:56] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-09-2024 21:06:56] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 21:06:56] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 21:06:56] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-09-2024 21:06:56] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:06:56] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:06:56] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:06:56] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:06:56] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-09-2024 21:06:56] Application shutdown complete.
+[32mINFO[0m:     [08-09-2024 21:06:56] Finished server process [[36m17528[0m]
+[33mWARNING[0m:  [08-09-2024 21:07:07] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 21:07:09] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 21:07:09] Starting component System
+[36mDEBUG[0m:    [08-09-2024 21:07:09] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 21:07:09] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:07:09] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:07:09] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:07:09] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:07:09] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 21:07:09] Started server process [[36m10208[0m]
+[32mINFO[0m:     [08-09-2024 21:07:09] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 21:07:09] Application startup complete.
+[32mINFO[0m:     [08-09-2024 21:07:09] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-09-2024 21:07:13] ::1:51687 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 21:07:13] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-09-2024 21:07:13] ::1:51687 - "POST /api/v1/collections/8b482307-ac44-4731-bf2a-aafe4f0e84cc/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:07:14] ::1:51687 - "POST /api/v1/collections/8b482307-ac44-4731-bf2a-aafe4f0e84cc/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 21:07:20] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 21:07:20] ::1:51697 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:07:20] ::1:51697 - "POST /api/v1/collections/8b482307-ac44-4731-bf2a-aafe4f0e84cc/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 21:08:42] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 21:08:42] ::1:51705 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:08:42] ::1:51705 - "POST /api/v1/collections/8b482307-ac44-4731-bf2a-aafe4f0e84cc/query HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:11:28] Shutting down
+[32mINFO[0m:     [08-09-2024 21:11:28] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-09-2024 21:11:28] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 21:11:28] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 21:11:28] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-09-2024 21:11:28] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:11:28] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:11:28] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:11:28] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:11:28] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-09-2024 21:11:28] Application shutdown complete.
+[32mINFO[0m:     [08-09-2024 21:11:28] Finished server process [[36m10208[0m]
+[33mWARNING[0m:  [08-09-2024 21:11:42] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [08-09-2024 21:11:43] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [08-09-2024 21:11:43] Starting component System
+[36mDEBUG[0m:    [08-09-2024 21:11:43] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [08-09-2024 21:11:43] Starting component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:11:43] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:11:43] Starting component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:11:43] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:11:43] Starting component SegmentAPI
+[32mINFO[0m:     [08-09-2024 21:11:44] Started server process [[36m20488[0m]
+[32mINFO[0m:     [08-09-2024 21:11:44] Waiting for application startup.
+[32mINFO[0m:     [08-09-2024 21:11:44] Application startup complete.
+[32mINFO[0m:     [08-09-2024 21:11:44] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [08-09-2024 21:11:54] ::1:51799 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 21:11:54] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [08-09-2024 21:11:54] ::1:51799 - "POST /api/v1/collections/04df22aa-7d4f-4d70-bafb-42b541f34b03/upsert HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:11:55] ::1:51799 - "POST /api/v1/collections/04df22aa-7d4f-4d70-bafb-42b541f34b03/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 21:12:48] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 21:12:48] ::1:51807 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:12:48] ::1:51807 - "POST /api/v1/collections/04df22aa-7d4f-4d70-bafb-42b541f34b03/query HTTP/1.1" 200
+[36mDEBUG[0m:    [08-09-2024 21:13:08] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [08-09-2024 21:13:08] ::1:51818 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:13:08] ::1:51818 - "POST /api/v1/collections/04df22aa-7d4f-4d70-bafb-42b541f34b03/query HTTP/1.1" 200
+[32mINFO[0m:     [08-09-2024 21:14:48] Shutting down
+[32mINFO[0m:     [08-09-2024 21:14:49] Waiting for application shutdown.
+[36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component System
+[36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component SegmentAPI
+[36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component Posthog
+[36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component SqliteDB
+[36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [08-09-2024 21:14:49] Application shutdown complete.
+[32mINFO[0m:     [08-09-2024 21:14:49] Finished server process [[36m20488[0m]
