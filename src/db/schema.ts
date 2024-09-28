@@ -1,5 +1,6 @@
 import { relations } from "drizzle-orm";
 import { integer, sqliteTable, text } from "drizzle-orm/sqlite-core";
+import { nanoid } from "nanoid";
 
 export const usersTable = sqliteTable("users", {
   id: integer("id").primaryKey(),
@@ -50,3 +51,16 @@ export const documentRelation = relations(documentsTable, ({ one }) => ({
 export const courseUnitRelation = relations(courseUnitsTable, ({ many }) => ({
   documents: many(documentsTable),
 }));
+
+export const chatTable = sqliteTable("chats", {
+  id: text("id")
+    .primaryKey()
+    .$defaultFn(() => nanoid()),
+});
+
+export const chatMessagesTable = sqliteTable("chat_messages", {
+  id: integer("id").primaryKey(),
+  chatId: text("chat_id").notNull(),
+  role: text("role").notNull().$type<"user" | "assistant" | "system">(),
+  content: text("content").notNull(),
+});

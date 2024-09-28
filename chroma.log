@@ -340,3 +340,197 @@ asyncio.exceptions.CancelledError
 [36mDEBUG[0m:    [08-09-2024 21:14:49] Stopping component OpenTelemetryClient
 [32mINFO[0m:     [08-09-2024 21:14:49] Application shutdown complete.
 [32mINFO[0m:     [08-09-2024 21:14:49] Finished server process [[36m20488[0m]
+[33mWARNING[0m:  [20-09-2024 12:09:24] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [20-09-2024 12:09:24] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [20-09-2024 12:09:24] Starting component System
+[36mDEBUG[0m:    [20-09-2024 12:09:24] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [20-09-2024 12:09:24] Starting component SqliteDB
+[36mDEBUG[0m:    [20-09-2024 12:09:25] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [20-09-2024 12:09:25] Starting component Posthog
+[36mDEBUG[0m:    [20-09-2024 12:09:25] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [20-09-2024 12:09:25] Starting component SegmentAPI
+[32mINFO[0m:     [20-09-2024 12:09:25] Started server process [[36m25324[0m]
+[32mINFO[0m:     [20-09-2024 12:09:25] Waiting for application startup.
+[32mINFO[0m:     [20-09-2024 12:09:25] Application startup complete.
+[32mINFO[0m:     [20-09-2024 12:09:25] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [20-09-2024 12:09:40] Shutting down
+[32mINFO[0m:     [20-09-2024 12:09:40] Waiting for application shutdown.
+[36mDEBUG[0m:    [20-09-2024 12:09:40] Stopping component System
+[36mDEBUG[0m:    [20-09-2024 12:09:40] Stopping component SegmentAPI
+[36mDEBUG[0m:    [20-09-2024 12:09:40] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [20-09-2024 12:09:40] Stopping component Posthog
+[36mDEBUG[0m:    [20-09-2024 12:09:40] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [20-09-2024 12:09:40] Stopping component SqliteDB
+[36mDEBUG[0m:    [20-09-2024 12:09:40] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [20-09-2024 12:09:40] Application shutdown complete.
+[32mINFO[0m:     [20-09-2024 12:09:40] Finished server process [[36m25324[0m]
+[33mWARNING[0m:  [20-09-2024 12:09:50] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [20-09-2024 12:09:50] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [20-09-2024 12:09:50] Starting component System
+[36mDEBUG[0m:    [20-09-2024 12:09:50] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [20-09-2024 12:09:50] Starting component SqliteDB
+[36mDEBUG[0m:    [20-09-2024 12:09:50] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [20-09-2024 12:09:50] Starting component Posthog
+[36mDEBUG[0m:    [20-09-2024 12:09:50] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [20-09-2024 12:09:50] Starting component SegmentAPI
+[32mINFO[0m:     [20-09-2024 12:09:50] Started server process [[36m24692[0m]
+[32mINFO[0m:     [20-09-2024 12:09:50] Waiting for application startup.
+[32mINFO[0m:     [20-09-2024 12:09:50] Application startup complete.
+[32mINFO[0m:     [20-09-2024 12:09:50] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [20-09-2024 12:12:18] 127.0.0.1:51321 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [20-09-2024 12:12:18] 127.0.0.1:51321 - "GET /favicon.ico HTTP/1.1" 404
+[32mINFO[0m:     [20-09-2024 12:13:32] ::1:51347 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-09-2024 12:13:32] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [20-09-2024 12:13:32] ::1:51347 - "POST /api/v1/collections/4cd07eab-2382-4e29-b9ed-b37eb79fabce/upsert HTTP/1.1" 200
+[33mWARNING[0m:  [22-09-2024 17:32:05] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [22-09-2024 17:32:06] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [22-09-2024 17:32:06] Starting component System
+[36mDEBUG[0m:    [22-09-2024 17:32:06] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [22-09-2024 17:32:06] Starting component SqliteDB
+[36mDEBUG[0m:    [22-09-2024 17:32:06] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [22-09-2024 17:32:06] Starting component Posthog
+[36mDEBUG[0m:    [22-09-2024 17:32:06] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [22-09-2024 17:32:06] Starting component SegmentAPI
+[32mINFO[0m:     [22-09-2024 17:32:06] Started server process [[36m20708[0m]
+[32mINFO[0m:     [22-09-2024 17:32:06] Waiting for application startup.
+[32mINFO[0m:     [22-09-2024 17:32:06] Application startup complete.
+[32mINFO[0m:     [22-09-2024 17:32:06] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [22-09-2024 17:34:57] ::1:57901 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [22-09-2024 17:34:57] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [22-09-2024 17:34:57] ::1:57901 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [22-09-2024 17:38:45] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [22-09-2024 17:38:45] ::1:57962 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-09-2024 17:38:45] ::1:57962 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [22-09-2024 17:39:12] ::1:57962 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/upsert HTTP/1.1" 200
+[32mINFO[0m:     [22-09-2024 17:39:18] ::1:57962 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [22-09-2024 21:33:51] ::1:59854 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[33mWARNING[0m:  [23-09-2024 22:46:38] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [23-09-2024 22:46:38] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [23-09-2024 22:46:38] Starting component System
+[36mDEBUG[0m:    [23-09-2024 22:46:38] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [23-09-2024 22:46:38] Starting component SqliteDB
+[36mDEBUG[0m:    [23-09-2024 22:46:39] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [23-09-2024 22:46:39] Starting component Posthog
+[36mDEBUG[0m:    [23-09-2024 22:46:39] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [23-09-2024 22:46:39] Starting component SegmentAPI
+[32mINFO[0m:     [23-09-2024 22:46:39] Started server process [[36m18124[0m]
+[32mINFO[0m:     [23-09-2024 22:46:39] Waiting for application startup.
+[32mINFO[0m:     [23-09-2024 22:46:39] Application startup complete.
+[32mINFO[0m:     [23-09-2024 22:46:39] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[36mDEBUG[0m:    [23-09-2024 22:46:50] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [23-09-2024 22:46:50] ::1:59346 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [23-09-2024 22:46:50] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [23-09-2024 22:46:50] ::1:59346 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [23-09-2024 22:47:28] ::1:59474 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[33mWARNING[0m:  [24-09-2024 16:31:38] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [24-09-2024 16:31:39] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [24-09-2024 16:31:39] Starting component System
+[36mDEBUG[0m:    [24-09-2024 16:31:39] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [24-09-2024 16:31:39] Starting component SqliteDB
+[36mDEBUG[0m:    [24-09-2024 16:31:39] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [24-09-2024 16:31:39] Starting component Posthog
+[36mDEBUG[0m:    [24-09-2024 16:31:39] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [24-09-2024 16:31:39] Starting component SegmentAPI
+[32mINFO[0m:     [24-09-2024 16:31:39] Started server process [[36m5972[0m]
+[32mINFO[0m:     [24-09-2024 16:31:39] Waiting for application startup.
+[32mINFO[0m:     [24-09-2024 16:31:39] Application startup complete.
+[32mINFO[0m:     [24-09-2024 16:31:39] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[36mDEBUG[0m:    [24-09-2024 16:31:48] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [24-09-2024 16:31:48] ::1:53708 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [24-09-2024 16:31:48] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [24-09-2024 16:31:48] ::1:53708 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [24-09-2024 16:31:59] ::1:53708 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [24-09-2024 16:32:17] ::1:53708 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [24-09-2024 16:32:55] ::1:53720 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [24-09-2024 16:33:33] ::1:53776 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [24-09-2024 17:12:16] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [24-09-2024 17:12:16] ::1:55676 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [24-09-2024 17:12:17] ::1:55676 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [25-09-2024 18:22:34] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [25-09-2024 18:22:34] ::1:62402 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [25-09-2024 18:22:35] ::1:62402 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [25-09-2024 18:23:34] ::1:62472 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [25-09-2024 18:35:02] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [25-09-2024 18:35:02] ::1:63104 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [25-09-2024 18:35:02] ::1:63104 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [26-09-2024 11:08:38] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [26-09-2024 11:08:38] ::1:50608 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-09-2024 11:08:38] ::1:50608 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [26-09-2024 11:10:03] ::1:50663 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [26-09-2024 11:10:30] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [26-09-2024 11:10:31] ::1:50694 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-09-2024 11:10:31] ::1:50694 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [26-09-2024 11:13:06] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [26-09-2024 11:13:06] ::1:50827 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-09-2024 11:13:06] ::1:50827 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [26-09-2024 11:14:49] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [26-09-2024 11:14:49] ::1:51086 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-09-2024 11:14:49] ::1:51086 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [26-09-2024 11:16:38] ::1:51154 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [26-09-2024 11:18:57] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [26-09-2024 11:18:57] ::1:51251 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-09-2024 11:18:57] ::1:51251 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [26-09-2024 11:24:05] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [26-09-2024 11:24:05] ::1:51424 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [26-09-2024 11:24:05] ::1:51424 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 09:32:31] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [27-09-2024 09:32:31] ::1:62045 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 09:32:31] ::1:62045 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 09:33:47] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [27-09-2024 09:33:47] ::1:62114 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 09:33:47] ::1:62114 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 09:40:45] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [27-09-2024 09:40:45] ::1:62299 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 09:40:45] ::1:62299 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 09:48:50] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [27-09-2024 09:48:50] ::1:62740 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 09:48:50] ::1:62740 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 09:50:22] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [27-09-2024 09:50:22] ::1:62780 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 09:50:22] ::1:62780 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 09:51:27] ::1:62795 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 09:52:18] ::1:62861 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/upsert HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 09:52:40] ::1:62861 - "POST /api/v1/collections/a23e3c78-6948-4899-81bc-fd563a36f4e4/query HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 13:54:46] Shutting down
+[32mINFO[0m:     [27-09-2024 13:54:46] Waiting for application shutdown.
+[36mDEBUG[0m:    [27-09-2024 13:54:46] Stopping component System
+[36mDEBUG[0m:    [27-09-2024 13:54:46] Stopping component SegmentAPI
+[36mDEBUG[0m:    [27-09-2024 13:54:46] Stopping component PersistentLocalHnswSegment
+[36mDEBUG[0m:    [27-09-2024 13:54:46] Stopping component LocalSegmentManager
+[36mDEBUG[0m:    [27-09-2024 13:54:46] Stopping component Posthog
+[36mDEBUG[0m:    [27-09-2024 13:54:46] Stopping component QuotaEnforcer
+[36mDEBUG[0m:    [27-09-2024 13:54:46] Stopping component SqliteDB
+[36mDEBUG[0m:    [27-09-2024 13:54:46] Stopping component OpenTelemetryClient
+[32mINFO[0m:     [27-09-2024 13:54:46] Application shutdown complete.
+[32mINFO[0m:     [27-09-2024 13:54:46] Finished server process [[36m5972[0m]
+[33mWARNING[0m:  [27-09-2024 13:54:59] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [27-09-2024 13:54:59] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [27-09-2024 13:54:59] Starting component System
+[36mDEBUG[0m:    [27-09-2024 13:54:59] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [27-09-2024 13:54:59] Starting component SqliteDB
+[36mDEBUG[0m:    [27-09-2024 13:54:59] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [27-09-2024 13:54:59] Starting component Posthog
+[36mDEBUG[0m:    [27-09-2024 13:54:59] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [27-09-2024 13:54:59] Starting component SegmentAPI
+[32mINFO[0m:     [27-09-2024 13:54:59] Started server process [[36m24452[0m]
+[32mINFO[0m:     [27-09-2024 13:54:59] Waiting for application startup.
+[32mINFO[0m:     [27-09-2024 13:54:59] Application startup complete.
+[32mINFO[0m:     [27-09-2024 13:54:59] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [27-09-2024 13:55:11] ::1:59690 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 13:55:11] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [27-09-2024 13:55:11] ::1:59690 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/upsert HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 13:56:12] ::1:59711 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/upsert HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 13:56:44] ::1:59735 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/query HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 14:43:03] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [27-09-2024 14:43:03] ::1:61980 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 14:43:03] ::1:61980 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/query HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 14:44:53] ::1:62391 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/upsert HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 14:45:58] ::1:62555 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/query HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 14:46:43] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [27-09-2024 14:46:43] ::1:62586 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 14:46:43] ::1:62586 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/query HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 14:46:52] ::1:62586 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/upsert HTTP/1.1" 200
+[36mDEBUG[0m:    [27-09-2024 15:43:14] Collection ai-lms already exists, returning existing collection.
+[32mINFO[0m:     [27-09-2024 15:43:14] ::1:64658 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 15:43:14] ::1:64658 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/query HTTP/1.1" 200
+[32mINFO[0m:     [27-09-2024 15:45:08] ::1:64762 - "POST /api/v1/collections/1edc2b4a-a062-4ad8-97ce-2cde36ac2ad7/query HTTP/1.1" 200

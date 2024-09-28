@@ -7,8 +7,8 @@ import { pull } from "langchain/hub";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
 import { createStuffDocumentsChain } from "langchain/chains/combine_documents";
 import { StringOutputParser } from "@langchain/core/output_parsers";
-import { llm } from "./lib/llm";
 import { startApi } from "./api";
+import { generateText } from "ai";
 
 startApi();
 

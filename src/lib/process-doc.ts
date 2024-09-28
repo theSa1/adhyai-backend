@@ -3,7 +3,9 @@ import { Document } from "langchain/document";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { vectorStore } from "./vector-store";
-import { UnstructuredLoader } from "@langchain/community/document_loaders/fs/unstructured";
+import * as fs from "fs";
+import { model } from "./llm";
+import { generateText } from "ai";
 
 export const processDoc = async (
   doc: Blob,
@@ -12,7 +14,6 @@ export const processDoc = async (
     [key: string]: any;
   }
 ) => {
-  const allDocs: Document<Record<string, any>>[] = [];
   let docs: Document<Record<string, any>>[] = [];
   if (filename.endsWith(".txt") || filename.endsWith(".md")) {
     const loader = new TextLoader(doc);
@@ -22,31 +23,36 @@ export const processDoc = async (
     docs = await loader.load();
   }
 
-  console.log(filename);
-  console.log(
-    docs
-      .map((c) => c.pageContent)
-      .join("\n-----------------------------------------\n")
-  );
-  console.log("-------------------------------------------------");
+  const prompt = `You are an assistant responsible for refining and organizing raw text extracted from documents. This raw text may contain irrelevant or incorrectly detected information, which you can remove as needed. Your task is to ensure that the content is properly structured, including accurate formatting of tables and other elements.
+    
+Raw Text: ${docs.map((doc) => doc.pageContent).join("\n\n")}`;
 
-  docs.forEach((d, i) => {
-    d.metadata = {
-      ...metadata,
-      filename,
-      chunkId: i,
-    };
-    allDocs.push(d);
+  const retrievalSummary = await generateText({
+    model: model,
+    prompt: prompt,
   });
+
+  fs.writeFileSync(filename + ".txt", retrievalSummary.text);
 
   const textSplitter = new RecursiveCharacterTextSplitter({
     chunkSize: 800,
     chunkOverlap: 200,
   });
 
-  const chunks = await textSplitter.splitDocuments(allDocs);
+  const chunks = await textSplitter.splitText(retrievalSummary.text);
 
-  const res = await vectorStore.addDocuments(chunks);
+  const res = await vectorStore.addDocuments(
+    chunks.map(
+      (chunk) =>
+        new Document({
+          pageContent: chunk,
+          metadata: {
+            ...metadata,
+            filename,
+          },
+        })
+    )
+  );
 
   console.log(res);
 };
