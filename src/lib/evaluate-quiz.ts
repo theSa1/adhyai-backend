@@ -63,9 +63,5 @@ export const evaluateQuiz = async (
     }),
   });
 
-  console.log("Prompt", prompt);
-
-  console.log("Generated Object", res.object);
-
   return res.object.evaluation;
 };

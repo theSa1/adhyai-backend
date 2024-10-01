@@ -37,7 +37,6 @@ export const sendChatMessageHandler = async (
           question: z.string().describe("the users question"),
         }),
         execute: async ({ question }) => {
-          console.log("Adding resource to knowledge base", question);
           const retrievedDocs = await getRetriever(courseId).invoke(question);
           const joinedPageContents = retrievedDocs
             .map((doc) => doc.pageContent)
@@ -60,8 +59,6 @@ export const sendChatMessageHandler = async (
           })
           .required(),
         execute: async ({ instructions }) => {
-          console.log("Quiz started with instructions", instructions);
-
           const quiz = await startQuiz(instructions, courseId);
 
           data.append({

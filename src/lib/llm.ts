@@ -6,8 +6,6 @@ const google = createGoogleGenerativeAI({
   apiKey: process.env.GOOGLE_API_KEY!,
 });
 
-console.log("Mistral API Key", process.env.MISTRAL_API_KEY);
-
 const mistral = createMistral({
   apiKey: process.env.MISTRAL_API_KEY!,
 });

@@ -50,6 +50,4 @@ Raw Text: ${docs.map((doc) => doc.pageContent).join("\n\n")}`;
         })
     )
   );
-
-  console.log(res);
 };

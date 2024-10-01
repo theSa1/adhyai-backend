@@ -69,13 +69,11 @@ fastify.setErrorHandler((error, request, reply) => {
       message: error.errors[0].message ?? "Invalid request",
     });
   } else if (error instanceof Error) {
-    console.error(error);
     reply.status(500).send({
       success: false,
       message: error.message,
     });
   } else {
-    console.error(error);
     reply.status(500).send({
       success: false,
       message: "Internal server error",
@@ -97,11 +95,12 @@ fastify.post("/quiz/submit", submitQuizHandler);
 
 export const startApi = async () => {
   try {
+    const port = process.env.PORT ? parseInt(process.env.PORT) : 4000;
     await fastify.listen({
-      port: 3000,
+      port: port,
       host: "0.0.0.0",
     });
-    console.log("API server is running");
+    console.log("Server running at port", port);
   } catch (err) {
     console.error(err);
     process.exit(1);
