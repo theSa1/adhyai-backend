@@ -23,6 +23,7 @@ fastify.register(cors, {
     "http://localhost:3000",
     "http://localhost:3001",
     "http://localhost:3002",
+    "https://adhyai.sa1.dev",
   ],
   credentials: true,
 });
