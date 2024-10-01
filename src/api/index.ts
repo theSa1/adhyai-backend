@@ -5,6 +5,13 @@ import { JWTPayload } from "@/types";
 import cors from "@fastify/cors";
 import { documentUploadHandler } from "./document/upload";
 import { sendChatMessageHandler } from "./chat/send";
+import { getQuizHandler } from "./quiz/get";
+import { getAllQuizzesHandler } from "./quiz/get-all";
+import { getCoursesHandler } from "./course/get";
+import { addCourseHandler } from "./course/add";
+import { submitQuizHandler } from "./quiz/submit";
+import { documentListGetHandler } from "./document/get";
+import { clerkPlugin } from "@clerk/fastify";
 
 const fastify = Fastify({
   // logger: true,
@@ -12,8 +19,15 @@ const fastify = Fastify({
 });
 
 fastify.register(cors, {
-  origin: "*",
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://localhost:3002",
+  ],
+  credentials: true,
 });
+
+fastify.register(clerkPlugin);
 
 fastify.addHook("preHandler", (request, reply, done) => {
   const token = request.headers["authorization"]?.replace("Bearer ", "");
@@ -27,21 +41,11 @@ fastify.addHook("preHandler", (request, reply, done) => {
 
   done();
 });
+
 fastify.decorate(
-  "teacherOnly",
+  "requireAuth",
   async (request: FastifyRequest, reply: FastifyReply) => {
-    if (request.user?.role !== "teacher") {
-      reply.status(403).send({
-        success: false,
-        message: "Forbidden",
-      });
-    }
-  }
-);
-fastify.decorate(
-  "studentOnly",
-  async (request: FastifyRequest, reply: FastifyReply) => {
-    if (request.user?.role !== "student") {
+    if (!request.user.userId) {
       reply.status(403).send({
         success: false,
         message: "Forbidden",
@@ -52,7 +56,7 @@ fastify.decorate(
 
 fastify.get(
   "/",
-  { preHandler: fastify.studentOnly },
+  { preHandler: fastify.requireAuth },
   async (request, reply) => {
     return { hello: "world" };
   }
@@ -80,8 +84,16 @@ fastify.setErrorHandler((error, request, reply) => {
 });
 
 fastify.post("/document/upload", documentUploadHandler);
+fastify.get("/document/get", documentListGetHandler);
 
 fastify.post("/chat/send", sendChatMessageHandler);
+
+fastify.get("/course/get", getCoursesHandler);
+fastify.post("/course/add", addCourseHandler);
+
+fastify.get("/quiz/get", getQuizHandler);
+fastify.get("/quiz/get-all", getAllQuizzesHandler);
+fastify.post("/quiz/submit", submitQuizHandler);
 
 export const startApi = async () => {
   try {

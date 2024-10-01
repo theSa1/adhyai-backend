@@ -3,7 +3,6 @@ import { Document } from "langchain/document";
 import { TextLoader } from "langchain/document_loaders/fs/text";
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { vectorStore } from "./vector-store";
-import * as fs from "fs";
 import { model } from "./llm";
 import { generateText } from "ai";
 
@@ -31,8 +30,6 @@ Raw Text: ${docs.map((doc) => doc.pageContent).join("\n\n")}`;
     model: model,
     prompt: prompt,
   });
-
-  fs.writeFileSync(filename + ".txt", retrievalSummary.text);
 
   const textSplitter = new RecursiveCharacterTextSplitter({
     chunkSize: 800,

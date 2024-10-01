@@ -1,6 +1,13 @@
 import { model } from "@/lib/llm";
-import { verctorRetriever } from "@/lib/vector-store";
-import { convertToCoreMessages, Message, streamText, tool } from "ai";
+import { startQuiz } from "@/lib/start-quiz";
+import { getRetriever, verctorRetriever } from "@/lib/vector-store";
+import {
+  convertToCoreMessages,
+  Message,
+  streamText,
+  tool,
+  StreamData,
+} from "ai";
 import { FastifyReply, FastifyRequest } from "fastify";
 import { z } from "zod";
 
@@ -12,24 +19,26 @@ export const sendChatMessageHandler = async (
   req: FastifyRequest,
   res: FastifyReply
 ) => {
-  const { messages } = req.body as {
+  const { messages, courseId } = req.body as {
     messages: Message[];
+    courseId: string;
   };
-  console.log(JSON.stringify(req.body, null, 2));
+
+  const data = new StreamData();
 
   const result = await streamText({
     model: model,
     system: SYSTEM_PROMPT,
     messages: convertToCoreMessages(messages),
     tools: {
-      getInformation: tool({
+      get_information: tool({
         description: `get extra information on the topic provided, the information may be not relevant to the question, if that is the case, please respond with "Sorry, I don't know" and only answer with relevant information.`,
         parameters: z.object({
           question: z.string().describe("the users question"),
         }),
         execute: async ({ question }) => {
           console.log("Adding resource to knowledge base", question);
-          const retrievedDocs = await verctorRetriever.invoke(question);
+          const retrievedDocs = await getRetriever(courseId).invoke(question);
           const joinedPageContents = retrievedDocs
             .map((doc) => doc.pageContent)
             .join("\n\n");
@@ -40,21 +49,39 @@ export const sendChatMessageHandler = async (
         },
       }),
 
-      startQuiz: tool({
-        description: `Start a quiz for the user, based on the topic provided, The quiz will start on an external platform, so please respond with message like the quiz has started.`,
-        parameters: z.object({
-          context: z.string().describe("detailed context of the quiz"),
-        }),
-        execute: async ({ context }) => {
-          console.log("Starting quiz for subject", context);
+      start_quiz: {
+        description:
+          "Initialize the quiz with a specified topic and number of questions.",
+        parameters: z
+          .object({
+            instructions: z
+              .string()
+              .describe("The instructions for the quiz setting AI"),
+          })
+          .required(),
+        execute: async ({ instructions }) => {
+          console.log("Quiz started with instructions", instructions);
+
+          const quiz = await startQuiz(instructions, courseId);
+
+          data.append({
+            type: "quiz",
+            data: {
+              quizId: quiz,
+            },
+          });
+
           return {
-            context: `Starting quiz for ${context}`,
+            context: "Quiz started on an external platform",
           };
         },
-      }),
+      },
+    },
+    onFinish: () => {
+      data.close();
     },
     maxSteps: 3,
   });
 
-  return result.toDataStreamResponse();
+  return result.toDataStreamResponse({ data });
 };

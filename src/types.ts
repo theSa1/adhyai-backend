@@ -1,8 +1,7 @@
 import type { FastifyRequest, FastifyReply } from "fastify";
 
 export type JWTPayload = {
-  userId: number;
-  role: "teacher" | "student";
+  userId: string;
 };
 
 declare module "fastify" {
@@ -10,7 +9,6 @@ declare module "fastify" {
     user?: JWTPayload;
   }
   interface FastifyInstance {
-    teacherOnly: (req: FastifyRequest, reply: FastifyReply) => Promise<void>;
-    studentOnly: (req: FastifyRequest, reply: FastifyReply) => Promise<void>;
+    requireAuth: (req: FastifyRequest, reply: FastifyReply) => Promise<void>;
   }
 }
