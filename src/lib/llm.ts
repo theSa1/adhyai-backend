@@ -10,5 +10,5 @@ const mistral = createMistral({
   apiKey: process.env.MISTRAL_API_KEY!,
 });
 
-// export const model = google("gemini-1.5-pro");
-export const model = mistral("open-mistral-nemo");
+export const model = google("gemini-1.5-pro");
+// export const model = mistral("open-mistral-nemo");

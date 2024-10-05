@@ -64,6 +64,7 @@ fastify.get(
 );
 
 fastify.setErrorHandler((error, request, reply) => {
+  console.error(error);
   if (error instanceof ZodError) {
     reply.status(400).send({
       success: false,
